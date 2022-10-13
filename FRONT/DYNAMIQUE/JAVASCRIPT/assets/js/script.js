@@ -1,6 +1,6 @@
 var a;
 
-a = 12; // Affectation
+a = 6; // Affectation
 
 if (a==7) { // Comparaison
     alert("Bien essayé !");
