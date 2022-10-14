@@ -1,6 +1,9 @@
 let anneedenaissance = parseInt(prompt("Indiquez votre année de naissance:"));
-let date = Date.getDate();
-let age = date - anneedenaissance;
+let todayyear = new Date();
+let cetteannee = todayyear.getFullYear();
+let difference = (cetteannee - anneedenaissance);
+let age = difference;
+
 let resultat;
 
 
@@ -15,4 +18,4 @@ else
 resultat = "majeur";
 }
 
-alert ("Vous avez" + age +" ans et donc vous êtes " + resultat + ".");
+alert ("Vous avez " + age +" ans et donc vous êtes " + resultat + ".");
