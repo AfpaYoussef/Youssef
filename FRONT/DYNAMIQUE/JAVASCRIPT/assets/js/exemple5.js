@@ -1,9 +1,8 @@
 let anneedenaissance = parseInt(prompt("Indiquez votre année de naissance:"));
-let todayyear = new Date();
-let cetteannee = todayyear.getFullYear();
+let today = new Date();
+let cetteannee = today.getFullYear();
 let difference = (cetteannee - anneedenaissance);
 let age = difference;
-
 let resultat;
 
 
