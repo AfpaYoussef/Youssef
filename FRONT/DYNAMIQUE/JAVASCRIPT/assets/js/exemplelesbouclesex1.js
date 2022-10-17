@@ -1,6 +1,6 @@
 let prenom;
 let tableau = [];
-let nombre= -1;
+let nombre = -1;
 
 do 
 {
