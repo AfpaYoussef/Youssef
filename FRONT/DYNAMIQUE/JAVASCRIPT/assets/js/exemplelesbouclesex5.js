@@ -1,3 +1,6 @@
-Let mot = prompt("Tapez votre mot:");
-var myVar = "mot";
-alert(myVar.length);
+let myVar = prompt("taper un mot:");
+let length = myVar.length;
+
+document.getElementById("exemple").innerHTML = "le nombre de caractères de votre mot est " + length + ".";
+
+
