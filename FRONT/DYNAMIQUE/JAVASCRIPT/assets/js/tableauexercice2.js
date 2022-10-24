@@ -14,7 +14,7 @@ let compteur = 0;
 let moyenne = 0;
 
 
-// les fonctions (1er bouton "saisie nom des postes")
+// les fonctions (1er bouton html "saisie nom des postes")
 
 function Getinteger()
 {
@@ -80,12 +80,11 @@ function InfoTab()
     alert("le maximum des postes est " + tab1[tab1.length - 1] + " et la moyenne des postes est " + moyenne);
 }
 
-// le tri à bulles (2ieme bouton "Le tableau dans l'ordre")
+// le tri à bulles (2ieme bouton html "Le tableau dans l'ordre")
 
 function Triabulle()
 
 {
 tab1.sort(function(a, b){return a - b});
 alert("Voici les valeurs de votre tableau dans l'ordre croissant: " + tab1)
-// console.table(tab1);
 }
