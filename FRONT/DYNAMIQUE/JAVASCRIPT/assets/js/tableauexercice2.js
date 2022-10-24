@@ -1,3 +1,5 @@
+// ATTENTION: RAFRAICHIR LA PAGE ENTRE DEUX UTILISATIONS
+
 //variables
 let valtab;
 let nomposte;
@@ -11,6 +13,8 @@ let sum = 0;
 let compteur = 0;
 let moyenne = 0;
 
+
+// les fonctions (1er bouton "saisie nom des postes")
 
 function Getinteger()
 {
@@ -48,7 +52,7 @@ function AfficheTab()
 
 function RechercheTab()
 {   
-    rechval = prompt("saisir le rang recherché du tableau:");
+    rechval = prompt("saisir le rang de la valeur recherchée du tableau:");
     alert(tab1[rechval]);
     InfoTab ();
 }
@@ -74,4 +78,14 @@ function InfoTab()
     Moyenne();
     Somme();
     alert("le maximum des postes est " + tab1[tab1.length - 1] + " et la moyenne des postes est " + moyenne);
+}
+
+// le tri à bulles (2ieme bouton "Le tableau dans l'ordre")
+
+function Triabulle()
+
+{
+tab1.sort(function(a, b){return a - b});
+alert("Voici les valeurs de votre tableau dans l'ordre croissant: " + tab1)
+// console.table(tab1);
 }
