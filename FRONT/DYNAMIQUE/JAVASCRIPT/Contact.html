@@ -10,18 +10,19 @@
 
     <p><h1>Vos coordonnées :</h1></p>
     <p style="color:brown"><strong><h> * Ces zones sont obligatoires pour envoyer le formulaire.</h></strong></p>
-    <form name="form3"> 
+
+    <form name="form3" method="post" action=""> 
         <div  style="line-height: 2.5rem;">
 
-            <label ><strong>Société: </strong><input type="text" name="choix" value=""/></label><label style="color:red"> *</label><br/>
-            <label ><strong>Personne à contacter:  </strong><input type="text" name="choix" value=""/></label><label style="color:red"> *</label><br/>
-            <label ><strong>Adresse de l'entreprise:  </strong><textarea  type="text" name="choix" value=""></textarea></label><br/> 
-            <label ><strong>Code postale:  </strong><input type="text" name="choix" value=""/></label><label style="color:red"> *</label><br/> 
-            <label ><strong>Ville:  </strong><input type="text" name="choix" value=""/></label><label style="color:red"> *</label><br/>
-            <label ><strong>E-mail:  </strong><input type="text" name="choix" value="" /></label><label style="color:red"> *</label><br/>
+            <label ><strong>Société: </strong><input type="text" name="choix" value="" id="societe"/></label><label style="color:red"> *</label><br/>
+            <label ><strong>Personne à contacter:  </strong><input type="text" name="choix" value="" id="perscontact"/></label><label style="color:red"> *</label><br/>
+            <label ><strong>Adresse de l'entreprise:  </strong><textarea  type="text" name="choix" value="" id=""></textarea></label><br/> 
+            <label ><strong>Code postale:  </strong><input type="text" name="choix" value="" id="codepost"/></label><label style="color:red"> *</label><br/> 
+            <label ><strong>Ville:  </strong><input type="text" name="choix" value="" id="ville"/></label><label style="color:red"> *</label><br/>
+            <label ><strong>E-mail:  </strong><input type="text" name="choix" value="" id="email"/></label><label style="color:red"> *</label><br/>
             <label ><strong>Téléphone:  </strong><input type="text" name="choix" value=""/></label><br/>
             <label ><strong>Tapez ou sélectionnez l'environnement technique du projet:  </strong><textarea  type="text" name="choix" id="targetValue" value=""></textarea></label><br>
-            <select name="Choix" id="targetOption" onChange= "menuToSpan(this.options[this.selectedIndex]);">
+            <select name="Choix" id="targetOption">
                 <option value="">Sélectionnez</option>
                 <option value="Access">Access</option>
                 <option value="Java">Java</option>
@@ -40,7 +41,7 @@
             </select>
         </div>    
         <input type="button" id="cliquons" value="Envoyer"/>
-        <input type="button" name="but" value="Effacer"  />
+        <input type="reset" name="but" value="Effacer"  />
     </form>
     <script src="/FRONT/DYNAMIQUE/JAVASCRIPT/assets/js/Contact.js"></script>
 </body>
