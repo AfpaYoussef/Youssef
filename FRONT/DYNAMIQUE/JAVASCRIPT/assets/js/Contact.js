@@ -19,7 +19,10 @@ var email= document.forms["form3"]["email"];
 var bouton1 = document.getElementById ("cliquons");
 
 
-// Regex (pour tester code postal, ville et email)
+
+
+
+// variables avec Regex (pour tester code postal, ville et email)
 var filtre_cp = new RegExp("^(([0-8][0-9])|(9[0-5])|(2[ab]))[0-9]{3}$");
 var resultat_cp = filtre_cp.test(codepost.value);
 
@@ -43,7 +46,7 @@ function menuToSpan(option) {
         menuToSpan(option);
     });
 
-
+var event;
 
 function validationform()   { 
 
@@ -107,3 +110,8 @@ function validationform()   {
 });
 
 
+// PREVENTDEFAULT POUR EMPECHER L' ENVOI (ACTION)DU FORMULAIRE SUITE A UNE ALERT
+
+document.getElementById("cliquons").addEventListener("click", function(event){
+    event.preventDefault()
+  });
